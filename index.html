@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Olange AI — Coming Soon</title>
+  <meta
+    name="description"
+    content="Olange AI turns empty rooms into sold properties. AI virtual staging, photo enhancement, a public marketplace, auto-generated brochures, WhatsApp links, visit scheduling and a full property CRM — coming soon for dealers & brokers."
+  />
+  <meta name="theme-color" content="#E2541F" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Olange AI — Coming Soon" />
+  <meta
+    property="og:description"
+    content="Turn empty rooms into sold properties. AI-staged photos and ready-to-share brochures — in minutes, not days. Launching soon."
+  />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Decorative animated background -->
+  <div class="aurora" aria-hidden="true">
+    <span class="blob blob--1"></span>
+    <span class="blob blob--2"></span>
+    <span class="blob blob--3"></span>
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Olange AI home">
+      <span class="brand__mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" width="30" height="30" fill="none">
+          <rect x="2" y="2" width="28" height="28" rx="9" fill="url(#g)" />
+          <path
+            d="M11 21V11.8c0-.5.6-.8 1-.5l8 5.2c.4.3.4.9 0 1.1l-8 5.2c-.4.3-1 0-1-.5Z"
+            fill="#fff"
+          />
+          <defs>
+            <linearGradient id="g" x1="2" y1="2" x2="30" y2="30">
+              <stop stop-color="#FF7A2F" />
+              <stop offset="1" stop-color="#E2541F" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </span>
+      <span class="brand__name">Olange<span>&nbsp;AI</span></span>
+    </a>
+    <nav class="top-nav">
+      <a href="#features">Features</a>
+      <a href="#how">How it works</a>
+      <a href="#pricing">Pricing</a>
+    </nav>
+    <span class="badge badge--header">Coming&nbsp;Soon</span>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <span class="pill">For Property Dealers &amp; Brokers</span>
+      <h1 class="hero__title">
+        Turn empty rooms into
+        <span class="grad">sold properties.</span>
+      </h1>
+      <p class="hero__sub">
+        AI-staged photos and ready-to-share brochures — in minutes, not days.
+        Olange AI stages, enhances, lists and tracks every flat you sell, all
+        from a single photo on your phone. We're putting the final touches on
+        it.
+      </p>
+
+      <!-- Launch countdown -->
+      <div class="countdown" id="countdown" aria-label="Time until launch">
+        <div class="count"><span data-days>--</span><small>Days</small></div>
+        <div class="count"><span data-hours>--</span><small>Hours</small></div>
+        <div class="count"><span data-mins>--</span><small>Minutes</small></div>
+        <div class="count"><span data-secs>--</span><small>Seconds</small></div>
+      </div>
+
+      <!-- Notify form -->
+      <form class="notify" id="notify-form" novalidate>
+        <label class="sr-only" for="email">Email address</label>
+        <input
+          id="email"
+          name="email"
+          type="email"
+          inputmode="email"
+          autocomplete="email"
+          placeholder="you@agency.com"
+          required
+        />
+        <button type="submit">Notify me at launch</button>
+      </form>
+      <p class="notify__hint" id="notify-msg">
+        Be first to get access — early dealers get special rates. No spam.
+      </p>
+    </section>
+
+    <!-- PROBLEM -->
+    <section class="problem">
+      <div class="problem__inner">
+        <h2>Empty and unfurnished flats are hard to sell.</h2>
+        <p>
+          Buyers struggle to picture how a bare or dated flat will look once
+          it's furnished. Hiring a photographer is expensive, editing is slow,
+          and getting a polished listing live can take days. Olange AI does all
+          of it in minutes — starting from a single photo taken on your phone.
+        </p>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="features" id="features" aria-labelledby="features-title">
+      <h2 id="features-title" class="section-title">What Olange AI does</h2>
+      <p class="section-lead">
+        Everything you need to take a property from a phone photo to a closed
+        deal.
+      </p>
+
+      <div class="grid">
+        <article class="card">
+          <span class="card__icon">🛋️</span>
+          <h3>AI Virtual Staging</h3>
+          <p>
+            Upload a photo of an empty or dated room and Olange AI shows it
+            fully furnished and renovated — while preserving the flat's actual
+            structure and layout.
+          </p>
+        </article>
+
+        <article class="card">
+          <span class="card__icon">✨</span>
+          <h3>Photo Enhancement</h3>
+          <p>
+            Dull, poorly-lit listing photos become bright, clean and
+            professional. Not a stock image — your actual flat, looking its
+            best.
+          </p>
+        </article>
+
+        <article class="card">
+          <span class="card__icon">🏢</span>
+          <h3>Marketplace Listing</h3>
+          <p>
+            Every property gets its own public listing page on the Olange
+            marketplace, with your AI-enhanced images front and centre for
+            buyers to browse and view.
+          </p>
+        </article>
+
+        <article class="card">
+          <span class="card__icon">📄</span>
+          <h3>Auto-Generated Brochures</h3>
+          <p>
+            Every property gets a polished, professional brochure with photos,
+            details and pricing — generated automatically and ready to send.
+          </p>
+        </article>
+
+        <article class="card">
+          <span class="card__icon">🔗</span>
+          <h3>Per-Property WhatsApp Links</h3>
+          <p>
+            Generate a separate shareable link for each property and send it on
+            WhatsApp in one tap — every buyer lands straight on the right
+            listing, previews and brochure included.
+          </p>
+        </article>
+
+        <article class="card">
+          <span class="card__icon">📅</span>
+          <h3>Visit Scheduling &amp; Alerts</h3>
+          <p>
+            Interested buyers book a site visit or call right inside the app —
+            and you get an instant notification with their details, so no
+            enquiry goes cold.
+          </p>
+        </article>
+
+        <article class="card card--wide">
+          <span class="card__icon">📊</span>
+          <h3>Property Dashboard &amp; CRM</h3>
+          <p>
+            Search any property and see its full record — who visited or
+            enquired, every client's details, and whether payments are cleared
+            or pending.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="how" id="how" aria-labelledby="how-title">
+      <h2 id="how-title" class="section-title">How it works</h2>
+      <p class="section-lead">Four steps from a phone photo to a shared listing.</p>
+
+      <ol class="steps">
+        <li class="step">
+          <span class="step__num">1</span>
+          <div>
+            <h3>Upload a photo</h3>
+            <p>Take a normal photo of the property on your phone and upload it.</p>
+          </div>
+        </li>
+        <li class="step">
+          <span class="step__num">2</span>
+          <div>
+            <h3>Get your preview</h3>
+            <p>
+              Olange AI generates a furnished, renovated preview along with
+              enhanced listing photos.
+            </p>
+          </div>
+        </li>
+        <li class="step">
+          <span class="step__num">3</span>
+          <div>
+            <h3>Generate the brochure</h3>
+            <p>
+              A professional, share-ready brochure is created automatically — no
+              design skills needed.
+            </p>
+          </div>
+        </li>
+        <li class="step">
+          <span class="step__num">4</span>
+          <div>
+            <h3>Share on WhatsApp</h3>
+            <p>Send it to buyers in one tap and close deals faster.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ENQUIRY TO PAYMENT -->
+    <section class="flow" aria-labelledby="flow-title">
+      <h2 id="flow-title" class="section-title">From enquiry to payment — handled end to end</h2>
+      <p class="section-lead">
+        Olange AI doesn't stop at marketing. Once a buyer is interested, the
+        whole deal closes and gets recorded inside the app — no chasing, no
+        manual book-keeping.
+      </p>
+
+      <div class="flow__grid">
+        <div class="flow__item">
+          <span class="flow__num">1</span>
+          <h3>Buyer schedules a visit or call</h3>
+          <p>
+            They tap "Interested" on a listing and pick a slot. You get an
+            instant notification with their name, contact and the property.
+          </p>
+        </div>
+        <div class="flow__item">
+          <span class="flow__num">2</span>
+          <h3>Deal is finalised, payment in-app</h3>
+          <p>
+            Once confirmed, the buyer pays securely through the app via UPI —
+            with no cash handling or separate payment links.
+          </p>
+        </div>
+        <div class="flow__item">
+          <span class="flow__num">3</span>
+          <h3>ID proof captured &amp; verified</h3>
+          <p>
+            Each client's ID is collected and securely stored with KYC
+            verification, so you always have a verified record of who's in your
+            property.
+          </p>
+        </div>
+        <div class="flow__item">
+          <span class="flow__num">4</span>
+          <h3>Records sync to your sheet automatically</h3>
+          <p>
+            Every completed payment is written straight into your monthly Excel
+            sheet — with the UPI reference and a unique transaction ID.
+          </p>
+        </div>
+        <div class="flow__item">
+          <span class="flow__num">5</span>
+          <h3>Rent auto-deducts every month</h3>
+          <p>
+            For rentals, set the schedule once and rent is collected
+            automatically each month — and every deduction updates the same
+            sheet, on its own.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST -->
+    <section class="trust" aria-labelledby="trust-title">
+      <h2 id="trust-title" class="section-title">Built to preserve buyer trust</h2>
+
+      <div class="trust__callout">
+        Every staged image carries a small <strong>"Virtually Staged / Sample
+        Preview"</strong> label, so buyers always know they're looking at a
+        preview. No false impressions — and aligned with RERA advertising norms.
+      </div>
+
+      <ul class="trust__list">
+        <li>
+          <strong>Before / after pairs</strong> give buyers proof that it's a
+          preview of their flat, not a generic stock photo.
+        </li>
+        <li>
+          <strong>Geometry preserved</strong> — the flat's real layout and
+          structure stay exactly as they are.
+        </li>
+        <li>
+          <strong>Fully transparent</strong> — from creation to sharing,
+          everything is clearly disclosed.
+        </li>
+      </ul>
+    </section>
+
+    <!-- PRICING -->
+    <section class="pricing" id="pricing" aria-labelledby="pricing-title">
+      <h2 id="pricing-title" class="section-title">Pricing that fits how you work</h2>
+      <p class="section-lead">
+        No heavy lock-in. Pay per property when you need it, or choose a plan
+        for regular use.
+      </p>
+
+      <div class="plans">
+        <div class="plan">
+          <h3>Pay Per Property</h3>
+          <p class="plan__desc">For occasional listings — pay only when you use it.</p>
+          <p class="plan__price">₹99<span>/ property</span></p>
+        </div>
+
+        <div class="plan plan--featured">
+          <span class="plan__tag">Most Popular</span>
+          <h3>Starter</h3>
+          <p class="plan__desc">For active dealers handling a handful of properties each month.</p>
+          <p class="plan__price">₹799<span>/ month</span></p>
+        </div>
+
+        <div class="plan">
+          <h3>Pro</h3>
+          <p class="plan__desc">For busy offices — unlimited staging, CRM and team access.</p>
+          <p class="plan__price">₹2,499<span>/ month</span></p>
+        </div>
+      </div>
+      <p class="plans__note">*Pricing indicative — special rates available for early dealers.</p>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+      <h2>Want to see a free sample?</h2>
+      <p>
+        Send us a photo of one of your flats and we'll create a staged preview
+        and brochure — free, no commitment.
+      </p>
+      <a class="cta__btn" href="#top">Join the early-access list</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p class="site-footer__brand">Olange AI</p>
+    <p>© <span id="year"></span> Olange AI. All rights reserved.</p>
+    <p class="site-footer__tag">Turn empty rooms into sold properties.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
