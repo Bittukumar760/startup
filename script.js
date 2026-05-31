@@ -95,4 +95,35 @@
       msg.classList.add("is-success");
     });
   }
+
+  /* ---- Reveal on scroll (progressive enhancement) ---- */
+  var revealTargets = document.querySelectorAll(
+    ".card, .step, .flow__item, .plan, .problem__inner, .trust__callout, .trust__list li, .cta"
+  );
+
+  var reduceMotion =
+    window.matchMedia &&
+    window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  if (!("IntersectionObserver" in window) || reduceMotion) {
+    // No observer support, or user prefers reduced motion: show everything.
+    return;
+  }
+
+  var io = new IntersectionObserver(
+    function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          io.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
+  );
+
+  Array.prototype.forEach.call(revealTargets, function (el) {
+    el.classList.add("reveal");
+    io.observe(el);
+  });
 })();

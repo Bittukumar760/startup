@@ -510,7 +510,25 @@ section { max-width: var(--max); margin: 0 auto; padding: 64px 24px; }
 }
 .site-footer__brand { color: #fff; font-weight: 800; font-size: 1.15rem; margin: 0 0 8px; }
 .site-footer p { margin: 4px 0; font-size: 0.9rem; }
+.site-footer__contact a {
+  color: var(--orange-bright);
+  font-weight: 600;
+  text-decoration: none;
+}
+.site-footer__contact a:hover { text-decoration: underline; }
 .site-footer__tag { color: var(--orange-bright); font-weight: 600; }
+
+/* ---------- Scroll reveal ---------- */
+.reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  will-change: opacity, transform;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
 
 /* ---------- Responsive ---------- */
 @media (max-width: 760px) {
